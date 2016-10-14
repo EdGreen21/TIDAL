@@ -18,11 +18,11 @@
 FROM continuumio/miniconda
 
 ################## BEGIN INSTALLATION ###########################
-RUN conda install bowtie=1.0.0
+RUN conda install bowtie
 RUN conda install bowtie2
 RUN conda install trimmomatic
 RUN conda install BLAST
-RUN conda install bedtools=2.17.0
+RUN conda install bedtools
 RUN conda install perl
 
 RUN mkdir TIDAL
