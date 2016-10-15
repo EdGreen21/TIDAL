@@ -18,6 +18,8 @@
 FROM continuumio/miniconda
 
 ################## BEGIN INSTALLATION ###########################
+RUN export https_proxy="https://www-int2:3128”
+
 RUN conda install bowtie
 RUN conda install bowtie2
 RUN conda install trimmomatic
