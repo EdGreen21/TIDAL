@@ -18,14 +18,18 @@
 FROM continuumio/miniconda
 
 ################## BEGIN INSTALLATION ###########################
+RUN conda config --add channels r
+RUN conda config --add channels bioconda
+RUN conda config --add channels conda-forge
 
 
-RUN conda install bowtie
-RUN conda install bowtie2
-RUN conda install trimmomatic
-RUN conda install BLAST
-RUN conda install bedtools
-RUN conda install perl
+
+RUN conda install bowtie -y -q
+RUN conda install bowtie2 -y -q
+RUN conda install trimmomatic -y -q
+RUN conda install BLAST -y -q
+RUN conda install bedtools -y -q
+RUN conda install perl -y -q
 
 RUN mkdir TIDAL
 
