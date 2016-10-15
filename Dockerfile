@@ -11,7 +11,7 @@
 # Base Image:       continuumio/miniconda:latest
 # Build Cmd:        docker build . --build-arg https_proxy=https://www-int2:3128
 # Pull Cmd:         docker pull edgreen/TIDAL:latest
-# Run Cmd:          docker run -i -t -v /path/to/file/dir/:/workspace/ edgreen/seq2hla -e sampleID=xx -e inputBAM=xx
+# Run Cmd:          docker run -it -v /path/to/file/dir/:/workspace/ edgreen/seq2hla -e sampleID=xx -e inputBAM=xx
 #################################################################
 
 # Source Image
